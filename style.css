@@ -65,9 +65,59 @@ body {
 
   border-bottom: 2px solid transparent;
 
-  transition: border-color 0.5s ease;
+  transition: border-color 0.3s ease-in-out;
 }
 
 .header__link:hover {
   border-color: var(--main-text);
+}
+
+/* HERO */
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 50px 50px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  min-height: 500px;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 72px;
+  text-transform: uppercase;
+}
+
+.hero__desrc {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+
+.hero__button {
+  margin-top: auto;
+  padding: 20px 90px;
+  border-radius: 100px;
+  color: var(--main-text);
+  background-color: #D2898B;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: bold;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.3s ease-in-out,
+              transform 0.1s ease;
+}
+
+.hero__button:hover {
+  opacity: 0.9;
+}
+
+.hero__button:active {
+  transform: translateY(1px);
 }
