@@ -15,22 +15,26 @@ body {
   min-height: 100vh;
 }
 
+.container {
+  padding: 0 100px;
+  max-width: 1920px;
+}
+
 /* HEADER */
 
 .header {
   --header-border: #333;
   --header-bc: #D2898B;
-
   margin: 0;
-  padding: 0 100px;
+  background-color: var(--header-bc);
+  border-bottom: 1px solid var(--header-border);
+}
 
+.header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-
-  background-color: var(--header-bc);
-  border-bottom: 1px solid var(--header-border);
 }
 
 
@@ -75,12 +79,16 @@ body {
 /* HERO */
 
 .hero {
+  padding: 80px 0;
+
+  border-bottom: 1px solid #333;
+}
+
+.hero__container {
   display: flex;
   flex-direction: column;
   align-items: start;
-  padding: 50px 50px;
   text-align: center;
-  border-bottom: 1px solid #333;
   min-height: 500px;
 }
 
